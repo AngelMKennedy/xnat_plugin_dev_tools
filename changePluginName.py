@@ -16,7 +16,7 @@ def renameDirs(folder_path,oldOrg="Template",newOrg="Aisperth",oldDataType="Samp
         print("os.rename("+file_path+", "+new_name+")")
         os.rename(file_path,new_name)
       if(oldDataType in name):
-        file_path = os.path.join(path,name)
+        file_path = os.path.join(path,name2)
         new_name = os.path.join(path,name2.replace(oldDataType,newDataType))
         print("os.rename("+file_path+", "+new_name+")")
         os.rename(file_path,new_name)
